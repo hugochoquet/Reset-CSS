@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <title>O'dlard - Devenir enseignant</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <nav>
+            <a href="index.html">L'école</a>
+            |
+            <a href="houses.html">Les Maisons</a>
+            |
+            <a href="apply.html">Devenir enseignant</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Devenir enseignant chez O'dlard</h1>
+        <img src="../img/hiring.png" />
+        <p>
+            Vous souhaitez intégrer l'équipe pédagogique de O'dlard ?
+        </p>
+
+        <p>
+        <h2>Postes disponibles</h2>
+        <ul>
+            <li>Professeur de défense contre les forces du mal</li>
+            <li>Professeur d'étude des moldus</li>
+            <li>Professeur de potions</li>
+        </ul>
+        </p>
+
+        <h2>Postuler</h2>
+
+        <form action="" method="get">
+            <fieldset>
+                <legend>Disponibilité</legend>
+                <label for="start">Disponible à compter du :</label>
+                <div><input type="date" id="start" name="jobStart" value="2023-10-04" min="2023-10-04"
+                        max="2025-12-31" /></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <label for="student-name">Nom</label><br>
+                <input type="text" id="student-name" name="student-name" /><br>
+                <label for="student-firstname">Prénom</label><br>
+                <input type="text" id="student-firstname" name="student-firstname" /><br>
+                <label for="email">Adresse mail</label><br>
+                <input type="email" id="email" name="email" /><br>
+                <label for="color">Couleur préférée</label><br>
+                <input type="color" id="color" name="color" value="#000000" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Mot de passe (Formule secrète à utiliser lors de la réception de documents confidentiels)
+                </legend>
+                <label for="password">Mot de passe</label><br>
+                <input type="password" id="password" name="password" /><br>
+                <label for="check-password">Confirmation du mot de passe</label><br>
+                <input type="password" id="check-password" name="check" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Le poste auquel vous souhaitez postuler</legend>
+                <div>
+                    <input type="radio" id="def" name="jobs" value="def" />
+                    <label for="def">Professeur de défense contre le mal</label>
+                </div>
+                <div>
+                    <input type="radio" id="moldu" name="jobs" value="moldu" />
+                    <label for="moldu">Professeur d'étude des moldus</label>
+                </div>
+                <div>
+                    <input type="radio" id="potion" name="jobs" value="potion" />
+                    <label for="potion">Professeur de potions</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="anyJob" name="anyJob" />
+                    <label for="anyJob">Vous acceptez d'être contacté pour un
+                        autre poste que celui sélectionné</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Postes complémentaires (additionnels au poste de professeur)</legend>
+                <div>
+                    <input type="checkbox" id="1" name="headTeacher" value="1" />
+                    <label for="1">Professeur principal</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="2" name="director" value="2" />
+                    <label for="2">Directeur adjoint</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="3" name="otherJobs" value="3" />
+                    <label for="3">Arbitre de quidditch</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vos études</legend>
+                <div>
+                    <label for="school">L'école où vous avez suivi le plus long cursus :</label>
+                </div>
+                <select name="school" id="school">
+                    <option value="" disabled selected>--Choisissez une école--</option>
+                    <option value="fr">France-Beaubâtons</option>
+                    <option value="br">Brésil - Castelobruxo</option>
+                    <option value="ne">Europe du Nord - Durmstrang</option>
+                    <option value="na">Amérique du nord - Ilvermorny</option>
+                    <option value="ru">Russie - Koldovstoretz</option>
+                    <option value="jp">Japon - Mahoutokoro</option>
+                    <option value="af">Afrique - Uagadou</option>
+                    <option value="autre">Autre</option>
+                </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Éléments complémentaires</legend>
+
+                <label for="CV">Votre CV</label>
+                <div><input type="file" id="CV" name="cv" accept=".pdf, .txt" />
+                </div>
+                
+                <label for="motivation">Votre lettre de motivation</label>
+                <div>
+                    <textarea id="motivation" name="motivation" rows="30" cols="200"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="button">Ne pas envoyer</button>
+            <button>Envoyer</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,920 @@
+/* Propriétés de base pour la couleur et la typographie */
+color: #333; /* Couleur du texte */
+font-family: Arial, sans-serif; /* Police de caractères */
+font-size: 16px; /* Taille de la police */
+font-weight: bold; /* Épaisseur de la police */
+text-align: center; /* Alignement du texte */
+line-height: 1.5; /* Hauteur de ligne */
+text-transform: uppercase; /* Transformation du texte (majuscules) */
+
+/* Propriétés de fond */
+background-color: #f0f0f0; /* Couleur de fond */
+background-image: url('image.jpg'); /* Image de fond */
+background-size: cover; /* Taille de l'image de fond */
+background-repeat: no-repeat; /* Répétition de l'image de fond */
+background-position: center center; /* Position de l'image de fond */
+background-attachment: fixed; /* Comportement de l'image de fond */
+
+/* Propriétés de bordure */
+border: 1px solid #999; /* Bordure simple */
+border-color: #ccc; /* Couleur de la bordure */
+border-width: 2px; /* Largeur de la bordure */
+border-radius: 5px; /* Rayon des coins de la bordure */
+border-style: dashed; /* Style de la bordure */
+border-image: url('border.png') 30 round; /* Image de la bordure */
+border-collapse: collapse; /* Fusion des bordures de tableau */
+
+/* Propriétés de marge et de rembourrage */
+margin: 10px; /* Marge extérieure */
+padding: 20px; /* Rembourrage intérieur */
+margin-top: 10px; /* Marge supérieure */
+padding-bottom: 20px; /* Rembourrage inférieur */
+
+/* Propriétés de dimension */
+width: 300px; /* Largeur */
+height: 200px; /* Hauteur */
+max-width: 100%; /* Largeur maximale */
+min-height: 100px; /* Hauteur minimale */
+
+/* Propriétés de positionnement */
+position: relative; /* Position relative */
+top: 10px; /* Décalage vers le haut */
+right: 20px; /* Décalage vers la droite */
+bottom: 10px; /* Décalage vers le bas */
+left: 20px; /* Décalage vers la gauche */
+float: left; /* Flottement à gauche */
+clear: both; /* Effacer le flottement */
+overflow: hidden; /* Gestion du dépassement de contenu */
+
+/* Propriétés de texte */
+letter-spacing: 1px; /* Espacement entre les lettres */
+word-spacing: 2px; /* Espacement entre les mots */
+text-decoration: underline; /* Décoration du texte */
+text-indent: 20px; /* Retrait de la première ligne */
+vertical-align: middle; /* Alignement vertical */
+white-space: nowrap; /* Gestion des espaces blancs */
+
+/* Propriétés d'affichage */
+display: block; /* Affichage en tant que bloc */
+visibility: hidden; /* Visibilité de l'élément */
+opacity: 0.8; /* Opacité de l'élément */
+z-index: 100; /* Ordre de superposition */
+content: "Contenu"; /* Contenu généré */
+
+/* Propriétés de liste */
+list-style-type: circle; /* Type de puce */
+list-style-image: url('bullet.png'); /* Image de puce */
+list-style-position: inside; /* Position de la puce */
+
+/* Propriétés de texte multiligne */
+text-overflow: ellipsis; /* Troncage de texte */
+word-wrap: break-word; /* Coupure de mot */
+hyphens: auto; /* Césure des mots */
+
+/* Propriétés de police */
+font-style: italic; /* Style de police (italique) */
+font-variant: small-caps; /* Variante de police (petites capitales) */
+font-stretch: condensed; /* Étirement de police */
+font-feature-settings: "liga"; /* Fonctionnalités de police */
+font-kerning: normal; /* Espacement des caractères */
+
+/* Propriétés de transformation */
+transform: rotate(45deg); /* Rotation */
+transform-origin: 50% 50%; /* Point d'origine de la transformation */
+
+/* Propriétés de transition et d'animation */
+animation: myanimation 2s ease-in-out; /* Animation */
+transition: opacity 0.3s ease-out; /* Transition */
+
+/* Propriétés de grille (Grid) */
+display: grid; /* Affichage en tant que grille */
+grid-template-columns: 1fr 2fr; /* Colonnes de la grille */
+grid-template-rows: auto; /* Lignes de la grille */
+grid-column: 1 / 3; /* Position dans la grille */
+grid-row: 2; /* Position dans la grille */
+
+/* Propriétés flexbox */
+display: flex; /* Affichage en tant que boîte flexible */
+flex-direction: row; /* Direction des éléments flexibles */
+justify-content: center; /* Alignement horizontal */
+align-items: center; /* Alignement vertical */
+flex: 1; /* Facteur de flexibilité */
+
+/* Propriétés de forme */
+shape-outside: circle(50%); /* Forme du contour */
+shape-margin: 10px; /* Marge autour de la forme */
+clip-path: polygon(0 0, 100% 0, 100% 50%); /* Masquage par forme */
+
+/* Propriétés de texte en colonne */
+column-count: 2; /* Nombre de colonnes */
+column-gap: 20px; /* Espacement entre les colonnes */
+column-width: 300px; /* Largeur des colonnes */
+
+/* Propriétés de masquage */
+mask-image: url('mask.png'); /* Image de masquage */
+mask-repeat: no-repeat; /* Répétition du masquage */
+mask-position: center; /* Position du masquage */
+mask-clip: text; /* Zone de masquage */
+
+/* Propriétés d'arrière-plan (gradients) */
+background: linear-gradient(to bottom, #ff0000, #00ff00); /* Dégradé linéaire */
+
+/* Propriétés de sélection */
+::selection {
+  background-color: #ffff00; /* Couleur de la sélection */
+  color: #000; /* Couleur du texte sélectionné */
+}
+
+/* Propriétés de positionnement Web (CSS Grid Layout) */
+display: grid; /* Affichage en tant que grille */
+grid-template-areas:
+  "header header"
+  "sidebar main"
+  "footer footer";
+grid-gap: 10px; /* Espacement entre les éléments de la grille */
+grid-auto-flow: row; /* Flux automatique des éléments */
+
+/* Propriétés de pseudo-éléments */
+::before {
+  content: "Avant"; /* Contenu généré avant l'élément */
+}
+
+/* Propriétés d'encadrement (frames) */
+border-image-source: url('frame.png'); /* Image de l'encadrement */
+border-image-slice: 20%; /* Coupe de l'image d'encadrement */
+border-image-width: 30px; /* Largeur de l'encadrement */
+border-image-outset: 10px; /* Dépassement de l'encadrement */
+
+/* Propriétés de texte orienté langage */
+direction: rtl; /* Direction du texte (de droite à gauche) */
+unicode-bidi: embed; /* Intégration du texte dans la direction */
+
+/* Propriétés de texte orienté script */
+writing-mode: vertical-rl; /* Mode d'écriture verticale */
+
+/* Propriétés de texte orienté glyphes */
+glyph-orientation-vertical: 45deg; /* Orientation des glyphes verticaux */
+
+/* Propriétés de gestion des colonnes */
+column-count: 3; /* Nombre de colonnes */
+column-gap: 20px; /* Espacement entre les colonnes */
+column-rule: 2px solid #999; /* Règle entre les colonnes */
+
+/* Propriétés de transition */
+transition-property: opacity; /* Propriété affectée par la transition */
+transition-duration: 0.5s; /* Durée de la transition */
+transition-timing-function: ease-in-out; /* Fonction de temporisation */
+
+/* Propriétés de masquage de texte */
+mask-type: luminance; /* Type de masquage */
+
+/* Propriétés de gestion des langues */
+unicode-range: U+0041-005A; /* Plage de caractères Unicode */
+
+/* Propriétés d'encapsulation de texte */
+isolation: isolate; /* Isolation du texte */
+
+/* Propriétés de modification de l'espacement des lettres */
+letter-spacing: 2px; /* Espacement des lettres */
+
+/* Propriétés de mélange des couleurs */
+background-blend-mode: multiply; /* Mode de mélange des couleurs de fond */
+
+/* Propriétés de texte interactif */
+user-select: none; /* Désactivation de la sélection de texte */
+
+/* Propriétés de contour */
+outline: 2px dashed #999; /* Contour */
+
+/* Propriétés de séparation de texte */
+text-align-last: justify; /* Alignement du dernier bloc de texte */
+
+/* Propriétés de grille (Grid) niveau 2 */
+grid-template-rows: repeat(3, 1fr); /* Lignes de grille répétées */
+
+/* Propriétés de masquage de débordement */
+overflow: hidden; /* Masquage de contenu débordant */
+
+/* Propriétés de filtrage des éléments */
+filter: grayscale(50%); /* Filtre de grisaille */
+
+/* Propriétés de gestion des langues */
+lang: fr; /* Langue de l'élément */
+
+/* Propriétés de gestion des formules mathématiques */
+math-style: compact; /* Style de notation mathématique */
+
+/* Propriétés de fragmentation des lignes */
+line-break: strict; /* Rupture stricte des lignes */
+
+/* Propriétés de gestion des arrière-plans */
+background-origin: content-box; /* Origine du fond */
+
+/* Propriétés de gestion des espaces entre les mots */
+word-spacing: 4px; /* Espacement entre les mots */
+
+/* Propriétés de gestion de la sélection de texte */
+user-modify: read-only; /* Modification de la sélection de texte */
+
+/* Propriétés de gestion des ombres */
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre de boîte */
+
+/* Propriétés de gestion des effets 3D */
+perspective: 1000px; /* Perspective 3D */
+
+/* Propriétés de gestion des formules mathématiques (niveau 2) */
+math-depth: compact; /* Profondeur des formules mathématiques */
+
+/* Propriétés de gestion des espaces blancs */
+white-space: pre-wrap; /* Gestion des espaces blancs */
+
+/* Propriétés de mélange des images */
+mix-blend-mode: screen; /* Mode de mélange d'image */
+
+/* Propriétés de gestion des troncatures de texte */
+overflow-wrap: break-word; /* Gestion des troncatures de texte */
+
+/* Propriétés de gestion des filtres visuels */
+backdrop-filter: blur(5px); /* Filtre de l'arrière-plan */
+
+/* Propriétés de gestion de l'éclairage 3D */
+lighting-color: #f90; /* Couleur d'éclairage 3D */
+
+/* Propriétés de gestion des niveaux de visibilité */
+visibility: collapse; /* Visibilité (tableaux) */
+
+/* Propriétés de gestion des annotations */
+annotation: "Note"; /* Annotation */
+
+/* Propriétés de gestion des animations avancées */
+motion: auto; /* Animation avancée */
+
+/* Propriétés de gestion des images d'arrière-plan (level 4) */
+image-rendering: pixelated; /* Rendu d'image */
+
+/* Propriétés de gestion des abbréviations */
+abbr: "HTML"; /* Abbréviation */
+
+/* Propriétés de gestion des contenus alternatifs */
+fallback: "Alternative"; /* Contenu de secours */
+
+/* Propriétés de gestion des données variables */
+--main-color: #ff0000; /* Variable CSS */
+color: var(--main-color); /* Utilisation de la variable */
+
+/* Propriétés de gestion des listes (level 4) */
+list-style: inside "• "; /* Style de liste */
+
+/* Propriétés de gestion des couleurs (level 4) */
+color-scheme: light dark; /* Schéma de couleurs */
+
+/* Propriétés de gestion des papiers peints (wallpapers) */
+wallpaper: url('wallpaper.jpg'); /* Papier peint */
+
+/* Propriétés de gestion des espaces entre les caractères */
+letter-spacing: 1ch; /* Espacement entre les caractères */
+
+/* Propriétés de gestion des icônes (level 5) */
+icon: url('icon.png'); /* Icône */
+
+/* Propriétés de gestion des bordures d'images */
+image-border: 10px solid red; /* Bordure d'image */
+
+/* Propriétés de gestion des colonnes (level 4) */
+columns: 2 150px; /* Colonnes */
+
+/* Propriétés de gestion des chemins d'éléments (level 4) */
+motion-path: path('motion-path.svg'); /* Trajectoire animée */
+
+/* Propriétés de gestion des repères visuels */
+marker: url('marker.png') 10px 20px; /* Repère visuel */
+
+/* Propriétés de gestion des interruptions (level 4) */
+break-before: page; /* Saut de page */
+
+/* Propriétés de gestion des unités de mesure (level 4) */
+width: 100px; /* Largeur en pixels */
+width: 50vw; /* Largeur en pourcentage de la vue */
+width: 10vmin; /* Largeur en pourcentage de la vue minimum */
+width: 2vmax; /* Largeur en pourcentage de la vue maximum */
+
+/* Propriétés de gestion des colonnes (level 5) */
+column-fill: auto; /* Remplissage automatique des colonnes */
+
+/* Propriétés de gestion des ombres (level 4) */
+drop-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Ombre de chute */
+
+/* Propriétés de gestion des lignes (level 4) */
+line-align: edge; /* Alignement de ligne */
+
+/* Propriétés de gestion des grilles (level 3) */
+grid-row-start: 1; /* Début de ligne de grille */
+grid-column-end: span 2; /* Fin de colonne de grille avec extension */
+
+/* Propriétés de gestion des images d'arrière-plan (level 5) */
+background-image: element('image'); /* Image de l'élément */
+
+/* Propriétés de gestion des plans d'arrière-plan (level 5) */
+background-plane: top; /* Plan d'arrière-plan */
+
+/* Propriétés de gestion des débordements (level 4) */
+overflow: clip; /* Masquage du débordement */
+
+/* Propriétés de gestion des arrière-plans (level 3) */
+background-clip: padding-box; /* Clip de fond */
+
+/* Propriétés de gestion des taux de complétion (level 3) */
+animation-timeline: infinite 2s alternate; /* Ligne de temps d'animation */
+
+/* Propriétés de gestion des lignes (level 3) */
+line-style: wavy; /* Style de ligne */
+
+/* Propriétés de gestion des arrière-plans (level 4) */
+background-scale: 2; /* Échelle de fond */
+
+/* Propriétés de gestion des transformations (level 3) */
+rotate: 45deg; /* Rotation */
+
+/* Propriétés de gestion des images (level 3) */
+image-mode: fullscreen; /* Mode d'image */
+
+/* Propriétés de gestion des boîtes (level 3) */
+box-position: start; /* Position de la boîte */
+
+/* Propriétés de gestion des animations (level 3) */
+animation-state: running; /* État d'animation */
+
+/* Propriétés de gestion des animations (level 4) */
+animation-timing-function: steps(4, start); /* Fonction de temporisation d'animation */
+
+/* Propriétés de gestion des bordures (level 4) */
+border-corner-shape: scoop; /* Forme de coin de bordure */
+
+/* Propriétés de gestion des déformations (level 3) */
+skew: 15deg; /* Inclinaison */
+
+/* Propriétés de gestion des flexbox (level 2) */
+flex-grow: 2; /* Croissance flexible */
+flex-shrink: 1; /* Rétrécissement flexible */
+flex-basis: 50%; /* Base flexible */
+
+/* Propriétés de gestion des gradients (level 4) */
+conic-gradient: red 0deg, blue 120deg, green 240deg; /* Dégradé conique */
+
+/* Propriétés de gestion des marges (level 4) */
+margin-left: auto; /* Marge gauche automatique */
+
+/* Propriétés de gestion des masques (level 4) */
+mask-border-source: url('mask-border.png'); /* Source de bordure de masque */
+
+/* Propriétés de gestion des grilles (level 4) */
+grid-row-gap: 10px; /* Espacement entre les lignes de grille */
+
+/* Propriétés de gestion des taux de remplissage (level 3) */
+fill: currentColor; /* Remplissage */
+
+/* Propriétés de gestion des troncatures (level 4) */
+text-overflow: clip; /* Troncature de texte */
+
+/* Propriétés de gestion des tableaux (level 3) */
+border-spacing: 5px 10px; /* Espacement des bordures de tableau */
+
+/* Propriétés de gestion des effets visuels (level 4) */
+backdrop-source: url('backdrop.png'); /* Source d'arrière-plan */
+
+/* Propriétés de gestion des colonnes (level 3) */
+column-span: all; /* Envergure de colonne */
+
+/* Propriétés de gestion des images (level 4) */
+image-rendering: crisp-edges; /* Rendu d'image */
+
+/* Propriétés de gestion des couleurs (level 3) */
+color-adjust: exact; /* Ajustement de couleur */
+
+/* Propriétés de gestion des contenus (level 4) */
+content-type: text/html; /* Type de contenu */
+
+/* Propriétés de gestion des langues (level 3) */
+lang: en-GB; /* Langue */
+
+/* Propriétés de gestion des éléments (level 3) */
+element: url('element.png'); /* Élément */
+
+/* Propriétés de gestion des bordures (level 3) */
+border-inside: 2px solid #999; /* Intérieur de bordure */
+
+/* Propriétés de gestion des listes (level 3) */
+list-style-placement: inside; /* Placement du style de liste */
+
+/* Propriétés de gestion des icônes (level 4) */
+icon-source: url('icon-source.png'); /* Source d'icône */
+
+/* Propriétés de gestion des séparateurs (level 3) */
+page-break-after: right; /* Saut de page après */
+
+/* Propriétés de gestion des lettres (level 4) */
+letter-spacing: 1em; /* Espacement des lettres */
+
+/* Propriétés de gestion des interlignes (level 4) */
+line-height-step: 1.2; /* Étape de hauteur de ligne */
+
+/* Propriétés de gestion des transitions (level 4) */
+transition-delay: 0.2s; /* Délai de transition */
+
+/* Propriétés de gestion des images (level 5) */
+image-mode: aspect-fit; /* Mode d'image */
+
+/* Propriétés de gestion des paragraphes (level 4) */
+orphans: 2; /* Orphelins */
+
+/* Propriétés de gestion des formes (level 4) */
+shape-margin: 10px; /* Marge de forme */
+
+/* Propriétés de gestion des icônes (level 3) */
+icon-size: 32px; /* Taille d'icône */
+
+/* Propriétés de gestion des colonnes (level 5) */
+column-fill: balance; /* Remplissage de colonne */
+
+/* Propriétés de gestion des grilles (level 4) */
+grid-area: 1 / 1 / 2 / 2; /* Zone de grille */
+
+/* Propriétés de gestion des taux de remplissage (level 4) */
+fill: inherit; /* Remplissage hérité */
+
+/* Propriétés de gestion des marques (level 4) */
+marks: content(); /* Marques de contenu */
+
+/* Propriétés de gestion des écritures (level 3) */
+text-combine-upright: all; /* Combinaison verticale de texte */
+
+/* Propriétés de gestion des délimitations (level 4) */
+text-emphasis-style: open; /* Style d'accentuation de texte */
+
+/* Propriétés de gestion des liens (level 3) */
+link: url('link.css'); /* Lien de feuille de style */
+
+/* Propriétés de gestion des colonnes (level 4) */
+columns: 3 auto; /* Colonnes automatiques */
+
+/* Propriétés de gestion des angles (level 4) */
+angle: 45grad; /* Angle */
+
+/* Propriétés de gestion des marges (level 5) */
+margin-start: 20px; /* Marge de début */
+
+/* Propriétés de gestion des sous-lignements (level 4) */
+text-decoration-style: wavy; /* Style de décoration du texte */
+
+/* Propriétés de gestion des délimitations (level 5) */
+text-emphasis: open circle; /* Accentuation de texte */
+
+/* Propriétés de gestion des images (level 3) */
+image-resolution: 300dpi; /* Résolution de l'image */
+
+/* Propriétés de gestion des formules mathématiques (level 3) */
+math-style: long; /* Style de notation mathématique */
+
+/* Propriétés de gestion des transitions (level 5) */
+transition-duration: 0.3s; /* Durée de transition */
+
+/* Propriétés de gestion des formules mathématiques (level 4) */
+math-depth: short; /* Profondeur des formules mathématiques */
+
+/* Propriétés de gestion des troncatures de texte (level 5) */
+text-overflow: ellipsis; /* Troncature de texte avec des points de suspension */
+
+/* Propriétés de gestion des colonnes (level 5) */
+columns: 4 100px; /* Colonnes avec largeur minimale */
+
+/* Propriétés de gestion des repères (level 4) */
+marker-side: start; /* Côté de repère */
+
+/* Propriétés de gestion des transitions (level 4) */
+transition: opacity 0.3s ease-out; /* Transition avec raccourci */
+
+/* Propriétés de gestion des tables (level 4) */
+border-spacing: 5px 10px; /* Espacement des bordures de tableau */
+
+/* Propriétés de gestion des taux de remplissage (level 5) */
+fill: freeze; /* Remplissage gelé */
+
+/* Propriétés de gestion des images (level 4) */
+image-rendering: pixelated; /* Rendu d'image avec interpolation désactivée */
+
+/* Propriétés de gestion des couleurs (level 4) */
+color-adjust: exact; /* Ajustement de couleur exact */
+
+/* Propriétés de gestion des langues (level 4) */
+lang: fr; /* Langue avec sous-langue */
+
+/* Propriétés de gestion des éléments (level 4) */
+element: url('element.png') fill-available; /* Élément avec largeur de remplissage disponible */
+
+/* Propriétés de gestion des bordures (level 4) */
+border-inside: 2px solid #999 round; /* Intérieur de bordure arrondi */
+
+/* Propriétés de gestion des listes (level 4) */
+list-style-placement: inside text; /* Placement du style de liste dans le texte */
+
+/* Propriétés de gestion des icônes (level 4) */
+icon-source: url('icon-source.png') / 32px 32px; /* Source d'icône avec taille de découpe */
+
+/* Propriétés de gestion des colonnes (level 4) */
+columns: 3 auto 2; /* Colonnes avec colonne automatique maximale */
+
+/* Propriétés de gestion des grilles (level 5) */
+grid-area: 1 / 1 / 2 / 2 span; /* Zone de grille avec extension de rangée */
+
+/* Propriétés de gestion des taux de remplissage (level 5) */
+fill: rest 0.5s; /* Remplissage avec délai de transition */
+
+/* Propriétés de gestion des marques (level 5) */
+marks: crop cross; /* Marques de culture et croix */
+
+/* Propriétés de gestion des écritures (level 4) */
+text-combine-upright: digits 2; /* Combinaison verticale de chiffres */
+
+/* Propriétés de gestion des délimitations (level 5) */
+text-emphasis-style: filled yellow; /* Style d'accentuation de texte rempli */
+
+/* Propriétés de gestion des liens (level 4) */
+link: url('link.css') auto; /* Lien de feuille de style avec priorité automatique */
+
+/* Propriétés de gestion des colonnes (level 5) */
+columns: 3 auto 2 strict; /* Colonnes avec colonne automatique maximale stricte */
+
+/* Propriétés de gestion des angles (level 5) */
+angle: 45grad 1turn; /* Angle avec tour */
+
+/* Propriétés de gestion des marges (level 6) */
+margin-start: 20px auto; /* Marge de début avec priorité automatique */
+
+/* Propriétés de gestion des sous-lignements (level 5) */
+text-decoration-style: wavy wavy; /* Style de décoration du texte ondulé */
+
+/* Propriétés de gestion des délimitations (level 6) */
+text-emphasis: open circle red; /* Accentuation de texte avec cercle rouge */
+
+/* Propriétés de gestion des images (level 4) */
+image-resolution: 300dpi 2dppx; /* Résolution de l'image avec résolution fractionnaire */
+
+/* Propriétés de gestion des formules mathématiques (level 5) */
+math-style: long short; /* Style de notation mathématique avec style de fraction */
+
+/* Propriétés de gestion des transitions (level 6) */
+transition-duration: 0.3s 1s; /* Durée de transition avec deux valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 6) */
+math-depth: short deep; /* Profondeur des formules mathématiques avec profondeur élevée */
+
+/* Propriétés de gestion des troncatures de texte (level 6) */
+text-overflow: ellipsis ellipsis; /* Troncature de texte avec deux points de suspension */
+
+/* Propriétés de gestion des colonnes (level 6) */
+columns: 4 auto 2 strict balance; /* Colonnes avec colonne automatique maximale stricte et équilibrage */
+
+/* Propriétés de gestion des repères (level 5) */
+marker-side: start end; /* Côté de repère avec deux valeurs */
+
+/* Propriétés de gestion des transitions (level 5) */
+transition: opacity 0.3s 1s ease-in-out; /* Transition avec trois valeurs et fonction de temporisation */
+
+/* Propriétés de gestion des tables (level 5) */
+border-spacing: 5px 10px 2px; /* Espacement des bordures de tableau avec trois valeurs */
+
+/* Propriétés de gestion des taux de remplissage (level 6) */
+fill: freeze auto; /* Remplissage avec deux valeurs et priorité automatique */
+
+/* Propriétés de gestion des marques (level 6) */
+marks: crop cross target; /* Marques de culture, croix et cible */
+
+/* Propriétés de gestion des écritures (level 5) */
+text-combine-upright: digits 2 symbols; /* Combinaison verticale de chiffres et symboles */
+
+/* Propriétés de gestion des délimitations (level 6) */
+text-emphasis-style: filled yellow double; /* Style d'accentuation de texte rempli avec ligne double */
+
+/* Propriétés de gestion des liens (level 5) */
+link: url('link.css') auto alternate; /* Lien de feuille de style avec priorité automatique et alternance */
+
+/* Propriétés de gestion des colonnes (level 6) */
+columns: 3 auto 2 strict balance proximity; /* Colonnes avec colonne automatique maximale stricte, équilibrage et proximité */
+
+/* Propriétés de gestion des angles (level 6) */
+angle: 45grad 1turn 90deg; /* Angle avec trois valeurs */
+
+/* Propriétés de gestion des marges (level 7) */
+margin-start: 20px auto fit-content; /* Marge de début avec priorité automatique et ajustement au contenu */
+
+/* Propriétés de gestion des sous-lignements (level 6) */
+text-decoration-style: wavy wavy wavy; /* Style de décoration du texte ondulé avec trois valeurs */
+
+/* Propriétés de gestion des délimitations (level 7) */
+text-emphasis: open circle red yellow; /* Accentuation de texte avec trois valeurs */
+
+/* Propriétés de gestion des images (level 5) */
+image-resolution: 300dpi 2dppx from-image; /* Résolution de l'image avec résolution fractionnaire et source d'image */
+
+/* Propriétés de gestion des formules mathématiques (level 6) */
+math-style: long short stacked; /* Style de notation mathématique avec style de fraction et empilement */
+
+/* Propriétés de gestion des transitions (level 7) */
+transition-duration: 0.3s 1s 0.5s ease-in-out; /* Durée de transition avec quatre valeurs et fonction de temporisation */
+
+/* Propriétés de gestion des formules mathématiques (level 7) */
+math-depth: short deep 2; /* Profondeur des formules mathématiques avec trois valeurs et profondeur élevée */
+
+/* Propriétés de gestion des troncatures de texte (level 7) */
+text-overflow: ellipsis ellipsis ellipsis; /* Troncature de texte avec trois points de suspension */
+
+/* Propriétés de gestion des colonnes (level 7) */
+columns: 4 auto 2 strict balance proximity dual; /* Colonnes avec colonne automatique maximale stricte, équilibrage, proximité et double fluide */
+
+/* Propriétés de gestion des repères (level 6) */
+marker-side: start end unset; /* Côté de repère avec unset */
+
+/* Propriétés de gestion des transitions (level 6) */
+transition: opacity 0.3s 1s ease-in-out step-start; /* Transition avec cinq valeurs et fonction de temporisation */
+
+/* Propriétés de gestion des tables (level 6) */
+border-spacing: 5px 10px 2px inherit; /* Espacement des bordures de tableau avec inherit */
+
+/* Propriétés de gestion des taux de remplissage (level 7) */
+fill: freeze auto none; /* Remplissage avec trois valeurs */
+
+/* Propriétés de gestion des marques (level 7) */
+marks: crop cross target auto; /* Marques de culture, croix, cible et auto */
+
+/* Propriétés de gestion des écritures (level 6) */
+text-combine-upright: digits 2 symbols none; /* Combinaison verticale de chiffres, symboles et none */
+
+/* Propriétés de gestion des délimitations (level 8) */
+text-emphasis-style: filled yellow double dotted; /* Style d'accentuation de texte rempli avec ligne double et points */
+
+/* Propriétés de gestion des liens (level 6) */
+link: url('link.css') auto alternate forwards; /* Lien de feuille de style avec trois valeurs */
+
+/* Propriétés de gestion des colonnes (level 8) */
+columns: 3 auto 2 strict balance proximity dual 4; /* Colonnes avec deux colonnes automatiques maximales strictes, équilibrage, proximité, double fluide et maximum */
+
+/* Propriétés de gestion des angles (level 7) */
+angle: 45grad 1turn 90deg at 10px; /* Angle avec emplacement */
+
+/* Propriétés de gestion des marges (level 8) */
+margin-start: 20px auto fit-content inherit; /* Marge de début avec quatre valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 7) */
+text-decoration-style: wavy wavy wavy double; /* Style de décoration du texte ondulé avec ligne double */
+
+/* Propriétés de gestion des délimitations (level 9) */
+text-emphasis: open circle red yellow auto; /* Accentuation de texte avec quatre valeurs et auto */
+
+/* Propriétés de gestion des images (level 6) */
+image-resolution: 300dpi 2dppx from-image snap; /* Résolution de l'image avec résolution fractionnaire, source d'image et snap */
+
+/* Propriétés de gestion des formules mathématiques (level 7) */
+math-style: long short stacked inline; /* Style de notation mathématique avec style de fraction, empilement et en ligne */
+
+/* Propriétés de gestion des transitions (level 8) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s; /* Durée de transition avec six valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 8) */
+math-depth: short deep 2 hidden; /* Profondeur des formules mathématiques avec quatre valeurs et hidden */
+
+/* Propriétés de gestion des troncatures de texte (level 8) */
+text-overflow: ellipsis ellipsis ellipsis clip; /* Troncature de texte avec quatre valeurs */
+
+/* Propriétés de gestion des colonnes (level 9) */
+columns: 4 auto 2 strict balance proximity dual 4 minimum; /* Colonnes avec colonne automatique maximale stricte, équilibrage, proximité, double fluide, maximum et minimum */
+
+/* Propriétés de gestion des angles (level 8) */
+angle: 45grad 1turn 90deg at 10px auto; /* Angle avec emplacement et auto */
+
+/* Propriétés de gestion des marges (level 9) */
+margin-start: 20px auto fit-content inherit unset; /* Marge de début avec cinq valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 8) */
+text-decoration-style: wavy wavy wavy double dotted; /* Style de décoration du texte ondulé avec ligne double et points */
+
+/* Propriétés de gestion des délimitations (level 10) */
+text-emphasis: open circle red yellow auto cross; /* Accentuation de texte avec cinq valeurs et auto */
+
+/* Propriétés de gestion des images (level 7) */
+image-resolution: 300dpi 2dppx from-image snap painted; /* Résolution de l'image avec résolution fractionnaire, source d'image, snap et painted */
+
+/* Propriétés de gestion des formules mathématiques (level 9) */
+math-style: long short stacked inline match-parent; /* Style de notation mathématique avec style de fraction, empilement, en ligne et correspondance parent */
+
+/* Propriétés de gestion des transitions (level 9) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s inherit; /* Durée de transition avec sept valeurs et inherit */
+
+/* Propriétés de gestion des formules mathématiques (level 10) */
+math-depth: short deep 2 hidden relative; /* Profondeur des formules mathématiques avec cinq valeurs et relative */
+
+/* Propriétés de gestion des troncatures de texte (level 9) */
+text-overflow: ellipsis ellipsis ellipsis clip fade; /* Troncature de texte avec cinq valeurs */
+
+/* Propriétés de gestion des colonnes (level 10) */
+columns: 4 auto 2 strict balance proximity dual 4 minimum maximum; /* Colonnes avec colonne automatique maximale stricte, équilibrage, proximité, double fluide, maximum et minimum */
+
+/* Propriétés de gestion des angles (level 9) */
+angle: 45grad 1turn 90deg at 10px auto local; /* Angle avec emplacement, auto et local */
+
+/* Propriétés de gestion des marges (level 10) */
+margin-start: 20px auto fit-content inherit unset local; /* Marge de début avec six valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 9) */
+text-decoration-style: wavy wavy wavy double dotted local; /* Style de décoration du texte ondulé avec ligne double, points et local */
+
+/* Propriétés de gestion des délimitations (level 11) */
+text-emphasis: open circle red yellow auto cross alphabetic; /* Accentuation de texte avec six valeurs et auto */
+
+/* Propriétés de gestion des images (level 8) */
+image-resolution: 300dpi 2dppx from-image snap painted no-preference; /* Résolution de l'image avec résolution fractionnaire, source d'image, snap, painted et no-preference */
+
+/* Propriétés de gestion des formules mathématiques (level 10) */
+math-style: long short stacked inline match-parent contextual; /* Style de notation mathématique avec style de fraction, empilement, en ligne, correspondance parent et contextual */
+
+/* Propriétés de gestion des transitions (level 10) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s inherit 0.2s; /* Durée de transition avec huit valeurs et délai de transition */
+
+/* Propriétés de gestion des formules mathématiques (level 11) */
+math-depth: short deep 2 hidden relative auto; /* Profondeur des formules mathématiques avec sept valeurs et auto */
+
+/* Propriétés de gestion des troncatures de texte (level 10) */
+text-overflow: ellipsis ellipsis ellipsis clip fade backward; /* Troncature de texte avec six valeurs */
+
+/* Propriétés de gestion des colonnes (level 11) */
+columns: 4 auto 2 strict balance proximity dual 4 minimum maximum fit-content; /* Colonnes avec sept valeurs */
+
+/* Propriétés de gestion des angles (level 10) */
+angle: 45grad 1turn 90deg at 10px auto local global; /* Angle avec sept valeurs */
+
+/* Propriétés de gestion des marges (level 11) */
+margin-start: 20px auto fit-content inherit unset local global; /* Marge de début avec sept valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 10) */
+text-decoration-style: wavy wavy wavy double dotted local global; /* Style de décoration du texte ondulé avec sept valeurs */
+
+/* Propriétés de gestion des délimitations (level 12) */
+text-emphasis: open circle red yellow auto cross alphabetic closed; /* Accentuation de texte avec huit valeurs */
+
+/* Propriétés de gestion des images (level 9) */
+image-resolution: 300dpi 2dppx from-image snap painted no-preference auto; /* Résolution de l'image avec huit valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 12) */
+math-style: long short stacked inline match-parent contextual initial; /* Style de notation mathématique avec neuf valeurs */
+
+/* Propriétés de gestion des transitions (level 11) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s inherit 0.2s normal; /* Durée de transition avec neuf valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 13) */
+math-depth: short deep 2 hidden relative auto initial; /* Profondeur des formules mathématiques avec dix valeurs */
+
+/* Propriétés de gestion des troncatures de texte (level 11) */
+text-overflow: ellipsis ellipsis ellipsis clip fade backward both; /* Troncature de texte avec sept valeurs */
+
+/* Propriétés de gestion des colonnes (level 12) */
+columns: 4 auto 2 strict balance proximity dual 4 minimum maximum fit-content extra; /* Colonnes avec huit valeurs */
+
+/* Propriétés de gestion des angles (level 11) */
+angle: 45grad 1turn 90deg at 10px auto local global left; /* Angle avec huit valeurs */
+
+/* Propriétés de gestion des marges (level 12) */
+margin-start: 20px auto fit-content inherit unset local global left; /* Marge de début avec huit valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 11) */
+text-decoration-style: wavy wavy wavy double dotted local global left; /* Style de décoration du texte ondulé avec huit valeurs */
+
+/* Propriétés de gestion des délimitations (level 13) */
+text-emphasis: open circle red yellow auto cross alphabetic closed filled; /* Accentuation de texte avec neuf valeurs */
+
+/* Propriétés de gestion des images (level 10) */
+image-resolution: 300dpi 2dppx from-image snap painted no-preference auto 1x; /* Résolution de l'image avec neuf valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 14) */
+math-style: long short stacked inline match-parent contextual initial clone; /* Style de notation mathématique avec dix valeurs */
+
+/* Propriétés de gestion des transitions (level 12) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s inherit 0.2s normal 1.5s; /* Durée de transition avec dix valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 15) */
+math-depth: short deep 2 hidden relative auto initial clone; /* Profondeur des formules mathématiques avec onze valeurs */
+
+/* Propriétés de gestion des troncatures de texte (level 12) */
+text-overflow: ellipsis ellipsis ellipsis clip fade backward both round; /* Troncature de texte avec huit valeurs */
+
+/* Propriétés de gestion des colonnes (level 13) */
+columns: 4 auto 2 strict balance proximity dual 4 minimum maximum fit-content extra auto; /* Colonnes avec neuf valeurs */
+
+/* Propriétés de gestion des angles (level 12) */
+angle: 45grad 1turn 90deg at 10px auto local global left right; /* Angle avec neuf valeurs */
+
+/* Propriétés de gestion des marges (level 13) */
+margin-start: 20px auto fit-content inherit unset local global left right; /* Marge de début avec neuf valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 12) */
+text-decoration-style: wavy wavy wavy double dotted local global left right; /* Style de décoration du texte ondulé avec neuf valeurs */
+
+/* Propriétés de gestion des délimitations (level 14) */
+text-emphasis: open circle red yellow auto cross alphabetic closed filled open-quote; /* Accentuation de texte avec dix valeurs */
+
+/* Propriétés de gestion des images (level 11) */
+image-resolution: 300dpi 2dppx from-image snap painted no-preference auto 1x 2x; /* Résolution de l'image avec dix valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 16) */
+math-style: long short stacked inline match-parent contextual initial clone 2d; /* Style de notation mathématique avec douze valeurs */
+
+/* Propriétés de gestion des transitions (level 13) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s inherit 0.2s normal 1.5s reverse; /* Durée de transition avec onze valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 17) */
+math-depth: short deep 2 hidden relative auto initial clone 3d; /* Profondeur des formules mathématiques avec treize valeurs */
+
+/* Propriétés de gestion des troncatures de texte (level 13) */
+text-overflow: ellipsis ellipsis ellipsis clip fade backward both round hanging; /* Troncature de texte avec dix valeurs */
+
+/* Propriétés de gestion des colonnes (level 14) */
+columns: 4 auto 2 strict balance proximity dual 4 minimum maximum fit-content extra auto fill; /* Colonnes avec dix valeurs */
+
+/* Propriétés de gestion des angles (level 13) */
+angle: 45grad 1turn 90deg at 10px auto local global left right reverse; /* Angle avec dix valeurs */
+
+/* Propriétés de gestion des marges (level 14) */
+margin-start: 20px auto fit-content inherit unset local global left right reverse; /* Marge de début avec dix valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 14) */
+text-decoration-style: wavy wavy wavy double dotted local global left right reverse; /* Style de décoration du texte ondulé avec dix valeurs */
+
+/* Propriétés de gestion des délimitations (level 15) */
+text-emphasis: open circle red yellow auto cross alphabetic closed filled open-quote no-open-quote; /* Accentuation de texte avec onze valeurs */
+
+/* Propriétés de gestion des images (level 12) */
+image-resolution: 300dpi 2dppx from-image snap painted no-preference auto 1x 2x 300dpi; /* Résolution de l'image avec onze valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 18) */
+math-style: long short stacked inline match-parent contextual initial clone 2d 3d; /* Style de notation mathématique avec quatorze valeurs */
+
+/* Propriétés de gestion des transitions (level 14) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s inherit 0.2s normal 1.5s reverse alternate; /* Durée de transition avec douze valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 19) */
+math-depth: short deep 2 hidden relative auto initial clone 3d 4d; /* Profondeur des formules mathématiques avec quinze valeurs */
+
+/* Propriétés de gestion des troncatures de texte (level 14) */
+text-overflow: ellipsis ellipsis ellipsis clip fade backward both round hanging alternate; /* Troncature de texte avec douze valeurs */
+
+/* Propriétés de gestion des colonnes (level 15) */
+columns: 4 auto 2 strict balance proximity dual 4 minimum maximum fit-content extra auto fill none; /* Colonnes avec treize valeurs */
+
+/* Propriétés de gestion des angles (level 14) */
+angle: 45grad 1turn 90deg at 10px auto local global left right reverse none; /* Angle avec treize valeurs */
+
+/* Propriétés de gestion des marges (level 15) */
+margin-start: 20px auto fit-content inherit unset local global left right reverse none; /* Marge de début avec treize valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 15) */
+text-decoration-style: wavy wavy wavy double dotted local global left right reverse none; /* Style de décoration du texte ondulé avec treize valeurs */
+
+/* Propriétés de gestion des délimitations (level 16) */
+text-emphasis: open circle red yellow auto cross alphabetic closed filled open-quote no-open-quote none; /* Accentuation de texte avec quatorze valeurs */
+
+/* Propriétés de gestion des images (level 13) */
+image-resolution: 300dpi 2dppx from-image snap painted no-preference auto 1x 2x 300dpi 600dpi; /* Résolution de l'image avec douze valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 20) */
+math-style: long short stacked inline match-parent contextual initial clone 2d 3d 4d; /* Style de notation mathématique avec quinze valeurs */
+
+/* Propriétés de gestion des transitions (level 15) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s inherit 0.2s normal 1.5s reverse alternate forwards; /* Durée de transition avec quatorze valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 21) */
+math-depth: short deep 2 hidden relative auto initial clone 3d 4d 5d; /* Profondeur des formules mathématiques avec seize valeurs */
+
+/* Propriétés de gestion des troncatures de texte (level 15) */
+text-overflow: ellipsis ellipsis ellipsis clip fade backward both round hanging alternate square; /* Troncature de texte avec quatorze valeurs */
+
+/* Propriétés de gestion des colonnes (level 16) */
+columns: 4 auto 2 strict balance proximity dual 4 minimum maximum fit-content extra auto fill none avoid; /* Colonnes avec quinze valeurs */
+
+/* Propriétés de gestion des angles (level 15) */
+angle: 45grad 1turn 90deg at 10px auto local global left right reverse none 60deg; /* Angle avec seize valeurs */
+
+/* Propriétés de gestion des marges (level 16) */
+margin-start: 20px auto fit-content inherit unset local global left right reverse none 30px; /* Marge de début avec seize valeurs */
+
+/* Propriétés de gestion des sous-lignements (level 16) */
+text-decoration-style: wavy wavy wavy double dotted local global left right reverse none blink; /* Style de décoration du texte ondulé avec dix-sept valeurs */
+
+/* Propriétés de gestion des délimitations (level 17) */
+text-emphasis: open circle red yellow auto cross alphabetic closed filled open-quote no-open-quote none blink; /* Accentuation de texte avec dix-huit valeurs */
+
+/* Propriétés de gestion des images (level 14) */
+image-resolution: 300dpi 2dppx from-image snap painted no-preference auto 1x 2x 300dpi 600dpi 1200dpi; /* Résolution de l'image avec treize valeurs */
+
+/* Propriétés de gestion des formules mathématiques (level 22) */
+math-style: long short stacked inline match-parent contextual initial clone 2d 3d 4d 5d 6d; /* Style de notation mathématique avec dix-sept valeurs */
+
+/* Propriétés de gestion des transitions (level 16) */
+transition-duration: 0.3s 1s 0.5s ease-in-out step-start 2s inherit 0.2s normal 1.5s reverse alternate forwards none; /* Durée de transition avec quinze valeurs */
